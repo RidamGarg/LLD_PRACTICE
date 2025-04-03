@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FourWheelerParkingSpot extends ParkingSpot{
-    Integer price(){
+    public Integer getFair() {
         return this.price + 20;
     }
     public static List<ParkingSpot> getParkingSpots() {

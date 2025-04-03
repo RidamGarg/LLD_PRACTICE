@@ -4,6 +4,6 @@ import LowLevelDesign.ParkingLot.model.Ticket;
 
 public class MinuteBasePS extends PricingStrategy {
     public Integer getPrice(Ticket ticket){
-        return (int) ((System.currentTimeMillis() - ticket.getEntry_time())) * 10;
+        return (int) ((System.currentTimeMillis() - ticket.getEntry_time())) * ticket.getParkingSpot().getFair();
     }
 }

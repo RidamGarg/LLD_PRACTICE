@@ -8,7 +8,7 @@ public class ParkingSpot {
     Integer price;
     Boolean isEmpty;
 
-    Integer getFair() {
+    public Integer getFair() {
         return price;
     }
 
