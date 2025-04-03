@@ -23,6 +23,14 @@ public class Vehicle {
       return vehicleNumber;
    }
 
+   @Override
+   public String toString() {
+      return "Vehicle{" +
+              "vehicleType=" + vehicleType +
+              ", vehicleNumber='" + vehicleNumber + '\'' +
+              '}';
+   }
+
    public void setVehicleNumber(String vehicleNumber) {
       this.vehicleNumber = vehicleNumber;
    }

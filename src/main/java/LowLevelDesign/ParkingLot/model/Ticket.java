@@ -29,6 +29,15 @@ public class Ticket {
         this.parkingSpot = parkingSpot;
     }
 
+    @Override
+    public String toString() {
+        return "Ticket{" +
+                "entry_time=" + entry_time +
+                ", vehicle=" + vehicle +
+                ", parkingSpot=" + parkingSpot +
+                '}';
+    }
+
     public Vehicle getVehicle() {
         return vehicle;
     }

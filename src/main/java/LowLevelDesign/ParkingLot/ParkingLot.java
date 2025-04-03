@@ -15,10 +15,12 @@ public class ParkingLot {
         EntryGate eg = new EntryGate();
         Ticket t = eg.parkVehicle(v);
 
+        System.out.println(t.toString());
+
 
         // Exit Gate
         ExitGate exitGate = new ExitGate();
-        exitGate.getTicketPrice(t);
+        System.out.println(exitGate.getTicketPrice(t));
         exitGate.collectPayment(PaymentType.Cash);
         exitGate.removeVehicle();
 

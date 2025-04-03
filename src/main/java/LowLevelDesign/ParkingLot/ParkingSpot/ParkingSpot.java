@@ -5,11 +5,21 @@ import LowLevelDesign.ParkingLot.model.Vehicle;
 public class ParkingSpot {
     Integer id;
     Vehicle v;
-    Integer price;
+    Integer price = 100;
     Boolean isEmpty;
 
     public Integer getFair() {
         return price;
+    }
+
+    @Override
+    public String toString() {
+        return "ParkingSpot{" +
+                "id=" + id +
+                ", v=" + v +
+                ", price=" + price +
+                ", isEmpty=" + isEmpty +
+                '}';
     }
 
     public void setId(Integer id) {
